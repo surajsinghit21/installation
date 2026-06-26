@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: netflix-app
+  labels:
+    app: netflix-app
+  namespace: test-ingress
+spec:
+  ports:
+  - name: http
+    port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: netflix-app
+  type: ClusterIP

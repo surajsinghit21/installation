@@ -8,7 +8,7 @@ spec:
   description: netflix Application project
 
   sourceRepos:
-    - "https://github.com/your-org/gitops-repo.git"
+    - "https://github.com/surajsinghit21/installation.git"
 
   destinations:
     - namespace: test-ingress

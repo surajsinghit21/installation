@@ -9,9 +9,9 @@ spec:
   project: netflix-project
 
   source:
-    repoURL: https://github.com/your-org/gitops-repo.git
-    targetRevision: HEAD
-    path: apps/netflix
+    repoURL: https://github.com/surajsinghit21/installation.git
+    targetRevision: main
+    path: k8s
 
   destination:
     server: https://kubernetes.default.svc
