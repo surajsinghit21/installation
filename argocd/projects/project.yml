@@ -1,4 +1,4 @@
-apiVersion: argocproj.io/v1alphal
+apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: netflix-project
