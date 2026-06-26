@@ -1,0 +1,23 @@
+apiVersion: argocproj.io/v1alphal
+kind: AppProject
+metadata:
+  name: netflix-project
+  namespace: argocd
+
+spec:
+  description: netflix Application project
+
+  sourceRepos:
+    - "https://github.com/your-org/gitops-repo.git"
+
+  destinations:
+    - namespace: test-ingress
+      server: https://kubernetes.default.svc
+
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
+  
+  namespaceResourceWhitelist:
+    - group: "*"
+      kind: "*"es
